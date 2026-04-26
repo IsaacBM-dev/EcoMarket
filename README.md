@@ -12,7 +12,7 @@ Este proyecto forma parte de mis prácticas y desarrollo de portafolio en la car
 * **Google fonts:** Tipos de fuentes.
 * **JavaScript:** Lógica de interactividad básica.
 
-✨ Características Destacadas
+## ✨ Características Destacadas
 * ➵Diseño Mobile-First: Totalmente adaptable a dispositivos móviles, tablets y escritorio.
 * ➵UI/UX Interactiva: Efectos de hover, zoom y sacudida en elementos clave para mejorar la experiencia del usuario.
 * ➵Navegación Intuitiva: Barra de navegación dinámica con indicador de página activa.
