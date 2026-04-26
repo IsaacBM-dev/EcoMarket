@@ -12,6 +12,11 @@ Este proyecto forma parte de mis prácticas y desarrollo de portafolio en la car
 * **Google fonts:** Tipos de fuentes.
 * **JavaScript:** Lógica de interactividad básica.
 
+✨ Características Destacadas
+➵Diseño Mobile-First: Totalmente adaptable a dispositivos móviles, tablets y escritorio.
+➵UI/UX Interactiva: Efectos de hover, zoom y sacudida en elementos clave para mejorar la experiencia del usuario.
+➵Navegación Intuitiva: Barra de navegación dinámica con indicador de página activa.
+
 ## 📂 Estructura del Proyecto
 El proyecto está organizado de forma modular para separar las vistas de los recursos estáticos:
 
@@ -28,8 +33,3 @@ El proyecto está organizado de forma modular para separar las vistas de los rec
  ┃ ┗ 📂 js/
  ┃   ┗ 📜 script.js        # Lógica interactiva
  ┗ 📜 Index.html           # Página principal (Landing Page)
-
-✨ Características Destacadas
-➵Diseño Mobile-First: Totalmente adaptable a dispositivos móviles, tablets y escritorio.
-➵UI/UX Interactiva: Efectos de hover, zoom y sacudida en elementos clave para mejorar la experiencia del usuario.
-➵Navegación Intuitiva: Barra de navegación dinámica con indicador de página activa.
