@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/img/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/estilos.css"> <!-- Sus estilos personalizados deben estar en la parte inferior en caso tener otros estilos -->
+    <title>EcoMarket | Inicio</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg nav-perso">
+        <div class="container">
+            <!-- logo | tambien se agregó la posibilidad de regreso rápido al inicio al hacel click en el logo-->
+            <a class="navbar-brand align-items-center" href="Index.html">
+                <img src="src/img/logo.png" alt="logo" class="logo">
+                <span class="sm-2 etiqueta-logo">EcoMarket</span>
+            </a>
+            <!--NUEVO: implementación para navbar adaptativo-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- items menu -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <ul class="navbar-nav mx-auto text-center mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contáctanos</a>
+                    </li>
+                </ul>
+                <!-- carrito -->
+                <div class="carrito">
+                    <a class="btn btn-perso carrito-boton">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        0
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <!-- almacenamos el contenido -->
+        <div class="container h-100">
+            <!-- ubicamos los elementos para el texto y la imagen en fila (row)-->
+            <div class="row align-items-center h-100">
+                <!-- Texto: Titulo y descripcion -->
+                <div class="col-md-6 text-center text-md-start">
+                    <h1>Del campo a tu mesa, 100% natural.</h1>
+                    <p>
+                        En EcoMarket, nuestra pasión es conectar la riqueza de la tierra directamente con tu bienestar. Seleccionamos cuidadosamente cada fruto, vegetal y grano, garantizando procesos de cultivo 100% orgánicos, totalmente libres de químicos y pesticidas. Al elegirnos, no solo llevas frescura, sabor y nutrición superior a tu mesa, sino que también apoyas activamente la agricultura sostenible y el comercio justo, impulsando un estilo de vida más consciente y saludable para ti y toda tu familia.
+                    </p>
+                </div>
+                <!--Imagen para el hero | NUEVO: implementación para efectos-->
+                <div class="col-md-6 text-center">
+                    <div class="img-zoom-wrapper">
+                        <img src="src/img/portada.jpg" class="img-fluid img-hero">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contentido cards (preview catalogo)-->
+    <section class="catalogo-preview py-5 animacion">
+        <div class="container">
+            <h2>Nuestros productos</h2>
+            <!-- NUEVO: implementación para 4 cards en una sola fila en pantalla completa -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card catalogo-card h-100">
+                        <img src="src/img/frutas.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Frutas</h5>
+                            <p class="card-text">Variedad de estación cosechadas en su punto óptimo de maduración. Dulzura natural sin químicos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card catalogo-card h-100">
+                        <img src="src/img/verduras.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Verduras</h5>
+                            <p class="card-text">Frescura crujiente y colores vivos. Vegetales libres de pesticidas para tus mejores recetas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card catalogo-card h-100">
+                        <img src="src/img/legumbres.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Legumbres</h5>
+                            <p class="card-text">Proteína vegetal de alta calidad. La base perfecta para una dieta equilibrada y energética.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card catalogo-card h-100">
+                        <img src="src/img/granos.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Granos</h5>
+                            <p class="card-text">Superalimentos ancestrales y cereales integrales seleccionados cuidadosamente por su pureza.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <!-- Ubicamos en fila las etiquetas del footer-->
+            <div class="row text-center text-md-start">
+                <!-- Mensaje-marca -->
+                <div class="col-md-4 mb-4">
+                    <h5>EcoMarket</h5>
+                    <p class="mensaje">
+                        EcoMarket es tu aliado en la búsqueda de una vida saludable y equilibrada. Ofrecemos una selección premium de productos orgánicos que respetan los ciclos de la naturaleza y apoyan el desarrollo de los productores locales. Cosechamos salud y bienestar para llevar lo mejor del campo directamente a tu hogar.
+                    </p>
+                </div>
+                <!-- enlaces -->
+                <div class="col-md-4 mb-4">
+                    <h5>Enlaces</h5>
+                    <ul class="lista-enlaces">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="pages/nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="pages/productos.html">Catálogo</a></li>
+                        <li><a href="pages/contacto.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <!-- redes sociales -->
+                <div class="col-md-4 mb-4">
+                    <h5>Síguenos</h5>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.x.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="text-center mt-4">
+                    <p>&copy; 2026 EcoMarket - Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+    <script src="src/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/c5db989223.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

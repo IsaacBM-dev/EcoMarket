@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../src/img/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/estilos.css">
+    <!-- Sus estilos personalizados deben estar en la parte inferior en caso tener otros estilos -->
+    <title>EcoMarket | Productos</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg nav-perso">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand align-items-center" href="../Index.html">
+                <img src="../src/img/logo.png" alt="logo" class="logo">
+                <span class="sm-2 etiqueta-logo">EcoMarket</span>
+            </a>
+            <!--NUEVO: implementación para navbar adaptativo-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- items menu -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <ul class="navbar-nav mx-auto text-center mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contáctanos</a>
+                    </li>
+                </ul>
+                <!-- carrito -->
+                <div class="carrito">
+                    <a class="btn btn-perso carrito-boton">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="contador-carrito">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- lista de productos -->
+    <section class="productos py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <div class="producto">
+                        <div class="card catalogo-card">
+                            <img src="../src/img/manzanas.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Manzanas Gala Orgánicas</h5>
+                                <p class="card-text">Dulces, crujientes y 100% libres de ceras artificiales.</p>
+                                <div class="contador-cantidad oculto">
+                                    <button class="restar">-</button>
+                                        <span class="cantidad">1</span>
+                                    <button class="sumar">+</button>
+                                </div>
+                                <button class="btn btn-perso agregar-carrito">
+                                    Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="producto">
+                        <div class="card catalogo-card">
+                            <img src="../src/img/mix.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Mix de Hojas Verdes</h5>
+                                <p class="card-text">Espinaca, kale y lechuga hidropónica.</p>
+                                <div class="contador-cantidad oculto">
+                                    <button class="restar">-</button>
+                                        <span class="cantidad">1</span>
+                                    <button class="sumar">+</button>
+                                </div>
+                                <button class="btn btn-perso agregar-carrito">
+                                    Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="producto">
+                        <div class="card catalogo-card">
+                            <img src="../src/img/quinua-blanca.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Quinua Real Blanca</h5>
+                                <p class="card-text">El superalimento de los Andes, listo lavados.</p>
+                                <div class="contador-cantidad oculto">
+                                    <button class="restar">-</button>
+                                        <span class="cantidad">1</span>
+                                    <button class="sumar">+</button>
+                                </div>
+                                <button class="btn btn-perso agregar-carrito">
+                                    Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="producto">
+                        <div class="card catalogo-card">
+                            <img src="../src/img/palta.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Palta Hass</h5>
+                                <p class="card-text">Cremosas, de tamaño seleccionado y maduros.</p>
+                                <div class="contador-cantidad oculto">
+                                    <button class="restar">-</button>
+                                        <span class="cantidad">1</span>
+                                    <button class="sumar">+</button>
+                                </div>
+                                <button class="btn btn-perso agregar-carrito">
+                                    Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="producto">
+                        <div class="card catalogo-card">
+                            <img src="../src/img/lentejas.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Lentejas de la Sierra</h5>
+                                <p class="card-text">Granos de alta calidad y sabor tradicional.</p>
+                                <div class="contador-cantidad oculto">
+                                    <button class="restar">-</button>
+                                        <span class="cantidad">1</span>
+                                    <button class="sumar">+</button>
+                                </div>
+                                <button class="btn btn-perso agregar-carrito">
+                                    Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="producto">
+                        <div class="card catalogo-card">
+                            <img src="../src/img/zanahorias.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Zanahorias</h5>
+                                <p class="card-text">Tiernas, dulces, perfectas y saludables.</p>
+                                <div class="contador-cantidad oculto">
+                                    <button class="restar">-</button>
+                                        <span class="cantidad">1</span>
+                                    <button class="sumar">+</button>
+                                </div>
+                                <button class="btn btn-perso agregar-carrito">
+                                    Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="producto">
+                        <div class="card catalogo-card">
+                            <img src="../src/img/arandanos.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Arándanos</h5>
+                                <p class="card-text">Poder antioxidante en bayas firmes y jugosas.</p>
+                                <div class="contador-cantidad oculto">
+                                    <button class="restar">-</button>
+                                        <span class="cantidad">1</span>
+                                    <button class="sumar">+</button>
+                                </div>
+                                <button class="btn btn-perso agregar-carrito">
+                                    Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="producto">
+                        <div class="card catalogo-card">
+                            <img src="../src/img/garbanzos.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Garbanzos Seleccionados.</h5>
+                                <p class="card-text">Ideales para un hummus casero o guisos nutritivos.</p>
+                                <div class="contador-cantidad oculto">
+                                    <button class="restar">-</button>
+                                        <span class="cantidad">1</span>
+                                    <button class="sumar">+</button>
+                                </div>
+                                <button class="btn btn-perso agregar-carrito">
+                                    Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="producto">
+                        <div class="card catalogo-card">
+                            <img src="../src/img/tomates.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Tomates de Árbol</h5>
+                                <p class="card-text">Frescura cítrica ideal para jugos y postres naturales.</p>
+                                <div class="contador-cantidad oculto">
+                                    <button class="restar">-</button>
+                                        <span class="cantidad">1</span>
+                                    <button class="sumar">+</button>
+                                </div>
+                                <button class="btn btn-perso agregar-carrito">
+                                    Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <!-- Ubicamos en fila las etiquetas del footer-->
+            <div class="row text-center text-md-start">
+                <!-- Mensaje-marca -->
+                <div class="col-md-4 mb-4">
+                    <h5>EcoMarket</h5>
+                    <p class="mensaje">
+                        EcoMarket es tu aliado en la búsqueda de una vida saludable y equilibrada. Ofrecemos una selección premium de productos orgánicos que respetan los ciclos de la naturaleza y apoyan el desarrollo de los productores locales. Cosechamos salud y bienestar para llevar lo mejor del campo directamente a tu hogar.
+                    </p>
+                </div>
+                <!-- enlaces -->
+                <div class="col-md-4 mb-4">
+                    <h5>Enlaces</h5>
+                    <ul class="lista-enlaces">
+                        <li><a href="../Index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="productos.html">Catálogo</a></li>
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <!-- redes sociales -->
+                <div class="col-md-4 mb-4">
+                    <h5>Síguenos</h5>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.x.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="text-center mt-4">
+                    <p>&copy; 2026 EcoMarket - Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/c5db989223.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

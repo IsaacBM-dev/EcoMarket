@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../src/img/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/estilos.css">
+    <!-- Sus estilos personalizados deben estar en la parte inferior en caso tener otros estilos -->
+    <title>EcoMarket | Nosotros</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg nav-perso">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand align-items-center" href="../Index.html">
+                <img src="../src/img/logo.png" alt="logo" class="logo">
+                <span class="sm-2 etiqueta-logo">EcoMarket</span>
+            </a>
+            <!--NUEVO: implementación para navbar adaptativo-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- items menu -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <ul class="navbar-nav mx-auto text-center mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/nosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contáctanos</a>
+                    </li>
+                </ul>
+                <!-- carrito -->
+                <div class="carrito">
+                    <a class="btn btn-perso carrito-boton">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        0
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="encabezado-nosotros text-center py-5">
+        <div class="container">
+            <h1>Sobre Nosotros</h1>
+            <p>En EcoMarket, nacimos con el firme propósito de transformar la manera en que las personas se relacionan con su alimentación. Somos un equipo apasionado por la nutrición consciente y la regeneración ambiental, trabajando incansablemente para democratizar el acceso a productos de la más alta calidad. Creemos firmemente que el bienestar humano y la salud de nuestro planeta son inseparables; por ello, cada decisión que tomamos está guiada por la ética, la sostenibilidad y el compromiso innegociable de ofrecer lo mejor que la naturaleza tiene para darnos.
+            </p>
+        </div>
+    </section>
+
+    <section class="nosotros py-5 animar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Nuestra historia</h2>
+                    <p>
+                        La historia de EcoMarket comenzó en los campos locales, impulsada por un sueño familiar de recuperar el sabor auténtico y la pureza de los alimentos que consumían nuestros abuelos. Al observar la brecha entre el campo y la ciudad, decidimos crear un puente directo que eliminara intermediarios innecesarios y garantizara frescura absoluta.
+                    </p>
+                    <p>
+                        Lo que inició como una pequeña iniciativa para conectar a agricultores comprometidos con consumidores responsables, ha evolucionado hasta convertirse en el mercado orgánico referente de la región. A pesar de nuestro crecimiento, nuestra esencia permanece intacta: transparencia total en el origen de nuestros productos y una búsqueda constante de la excelencia en cada cosecha.
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="../src/img/logo.png" class="img-fluid img-nosotros">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mision-vision py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3>Misión</h3>
+                    <p>
+                        Facilitar el acceso a una alimentación superior mediante la provisión de productos orgánicos certificados, promoviendo activamente hábitos de vida saludables en nuestra comunidad. Nos esforzamos por fortalecer el vínculo entre el campo y el consumidor, garantizando precios justos para nuestros agricultores aliados y asegurando que cada producto contribuya tanto al bienestar físico de nuestros clientes como a la preservación de los ecosistemas naturales.
+                    </p>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <h3>Visión</h3>
+                    <p>
+                        Aspiramos a consolidarnos como la plataforma líder y el referente definitivo en el mercado de productos orgánicos a nivel nacional, siendo reconocidos por nuestra innovación y estándares de calidad innegociables. Nuestra visión es inspirar un movimiento hacia el consumo consciente, donde cada hogar elija nutrirse con respeto hacia la tierra, convirtiendo la alimentación orgánica en el pilar fundamental de una sociedad más sana y ecológicamente responsable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="valores py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Nuestros valores</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa-solid fa-heart fa-2x mb-2"></i>
+                    <h5>Sostenibilidad</h5>
+                    <p>Respetamos los ciclos de la tierra y minimizamos nuestro impacto ambiental.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-leaf fa-2x mb-2"></i>
+                    <h5>Integridad</h5>
+                    <p>Garantizamos el origen orgánico de cada producto que llega a tus manos.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-handshake fa-2x mb-2"></i>
+                    <h5>Comunidad</h5>
+                    <p>Construimos relaciones justas y duraderas con nuestros productores y clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <!-- Ubicamos en fila las etiquetas del footer-->
+            <div class="row text-center text-md-start">
+                <!-- Mensaje-marca -->
+                <div class="col-md-4 mb-4">
+                    <h5>EcoMarket</h5>
+                    <p class="mensaje">
+                        EcoMarket es tu aliado en la búsqueda de una vida saludable y equilibrada. Ofrecemos una selección premium de productos orgánicos que respetan los ciclos de la naturaleza y apoyan el desarrollo de los productores locales. Cosechamos salud y bienestar para llevar lo mejor del campo directamente a tu hogar.
+                    </p>
+                </div>
+                <!-- enlaces -->
+                <div class="col-md-4 mb-4">
+                    <h5>Enlaces</h5>
+                    <ul class="lista-enlaces">
+                        <li><a href="../Index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="productos.html">Catálogo</a></li>
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <!-- redes sociales -->
+                <div class="col-md-4 mb-4">
+                    <h5>Síguenos</h5>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.x.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="text-center mt-4">
+                    <p>&copy; 2026 EcoMarket - Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/8d9bfd8681.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
